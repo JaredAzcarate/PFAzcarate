@@ -1,0 +1,37 @@
+/*Welcome Section */
+
+.welcome{
+    padding: 40px 0;
+    background: linear-gradient(180deg, #F8F8F8 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.welcome-sections{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-text h1{
+    max-width: 400px;
+}
+
+.welcome-text h1 span{
+    font-weight: 600;
+}
+
+@media (max-width:765px) {
+    .welcome-sections{
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .welcome-text h1{
+        margin: 0 auto 30px;
+    }
+    .welcome-text h4{
+        display: none;
+    }
+}

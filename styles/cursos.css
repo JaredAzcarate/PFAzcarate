@@ -1,0 +1,32 @@
+.cursos-descripcion{
+    height: 70vh;
+    background-color: var(--color-blue);
+    color: white;
+    border-radius: 20px;
+}
+
+.cursos-grid_bg{
+    background: linear-gradient(180deg, rgba(243,243,243,1) 0%, rgba(255,255,255,1) 53%);
+}
+.cursos-grid{
+    margin: 0 30px !important;
+}
+
+.cursos-box_curso{
+    padding: 30px !important;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.cursos-inscripcion{
+    min-height: 80vh;
+    padding: 50px !important;
+    background: linear-gradient(270deg, rgba(243,243,243,1) 0%, rgba(255,255,255,1) 53%);
+    border-radius: 20px;
+}
+
+.cursos-inscripcion h6{
+    color: var(--color-blue);
+    font-weight: 700;
+}
