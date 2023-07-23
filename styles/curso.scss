@@ -1,0 +1,43 @@
+@import "./mixins.scss";
+@import "./colores.scss";
+
+.curso-bg{
+    background: $color-grey;
+    border-radius: 20px;
+}
+
+.info-title{
+    padding: 10px;
+    background: $color-blue;
+    border-radius: 10px;
+    color: white !important;
+}
+
+.curso-information{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 53%, rgba(243,243,243,1) 100%);
+}
+
+.accordion-button{
+    background: none !important;
+}
+
+.accordion-item{
+    background: none !important;
+    color: $color-blue !important;
+}
+
+.accordion-button:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color:transparent !important;
+    box-shadow: none !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    padding: 5px;
+    background-color: $color-blue !important;
+    border-radius: 5px;
+}

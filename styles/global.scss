@@ -1,0 +1,246 @@
+@import "./mixins.scss";
+@import "./colores.scss";
+
+/* Layouts */
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif !important;
+    color: $color-darkblue;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.develop{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.full-view{
+    height: 100vh;
+}
+
+@media (max-width:765px) {
+    .container{
+        padding: 0 40px;
+    }
+}
+
+/* Set Texts */
+
+h1, h2, h3, h4, p, a {
+    margin-top: 0;
+    padding: 0;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+a{
+    font-size: 1rem;
+    text-decoration: none !important;
+    transition: .1s ease-in-out;
+
+    &:hover{
+        color: $color-violet !important;
+    }
+}
+
+.text-blue{
+    color: $color-blue;
+}
+
+/* Set Lists */
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 !important;
+}
+
+/* Set Image */
+
+.image-brand{
+    width: 100%;
+    max-width: 200px;
+}
+
+.img{
+    width: 100%;
+}
+
+.max-img_small{
+    max-width: 100px;
+}
+
+/* Tags */
+.tag{
+    width: 100%;
+    padding: 5px;
+    background: $color-blue;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+
+/*Set Buttons */
+
+button{
+    width: 100%;
+    max-width: 250px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    border-radius: 20px !important;
+    transition: .2s ease-in-out;
+
+    a{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 300;
+        color: white !important;
+
+        &:hover{
+            color: white !important;
+        }
+    }
+}
+
+.button-large{
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.button-primary{
+    background: $color-blue;
+    border: none;
+
+    &:hover{
+        background: transparent;
+        border:2px solid $color-blue;
+
+        a{
+            color: $color-blue !important;
+        }
+
+    }
+}
+
+.button-secondary{
+    background: $color-violet;
+    border: none;
+
+    &:hover{
+        background: transparent;
+        border:2px solid $color-violet;
+        
+        a{
+            color: $color-violet !important;
+        }
+
+    }
+}
+
+.button-primary_contrast{
+    background: transparent;
+    border:2px solid white;
+
+    &:hover{
+        background: $color-violet;
+        border:2px solid $color-violet;
+    }
+}
+
+
+
+/* Set Form */
+
+.form{
+    padding: 40px 0 0;
+}
+
+.form-sections{
+    @include flex (row, start, space-between)
+}
+
+.form-section{
+    width: 100%;
+}
+
+.form-field form{
+    margin: 0 auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select{
+    height: 40px;
+}
+
+input, textarea, select{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: $color-grey;
+    font-family: 'Nunito', sans-serif !important;
+    color: $color-darkgrey;
+}
+
+.form-field_send{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+
+.form-field_send:hover{
+    color: $color-blue;
+}
+
+.form-title{
+    h1{
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
+
+.form-title{
+    h1{
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width:765px) {
+    .form-sections{
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}

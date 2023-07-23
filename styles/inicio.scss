@@ -1,3 +1,7 @@
+@import "./mixins.scss";
+@import "./colores.scss";
+
+
 /*Welcome Section */
 
 .welcome{
@@ -6,17 +10,21 @@
 }
 
 .welcome-sections{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(row, center, space-between);
 }
 
-.welcome-text h1{
-    max-width: 400px;
+.welcome-text {
+    h1{
+        max-width: 650px;
+    }
 }
 
-.welcome-text h1 span{
-    font-weight: 600;
+.welcome-text{
+    h1{
+        span{
+            font-weight: 600;
+        }
+    } 
 }
 
 @media (max-width:765px) {
@@ -28,10 +36,15 @@
         text-align: center;
     }
 
-    .welcome-text h1{
-        margin: 0 auto 30px;
+    .welcome-text {
+        h1{
+            margin: 0 auto 30px;
+        }
+
     }
-    .welcome-text h4{
-        display: none;
+    .welcome-text{
+        h4{
+            display: none;
+        }
     }
 }

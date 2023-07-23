@@ -1,0 +1,74 @@
+@import "./mixins.scss";
+@import "./colores.scss";
+
+/*Set Footer */
+
+footer{
+    margin-top: 40px;
+    padding: 40px 0 0;
+    background-color: $color-blue;
+    color: white;
+
+    a{
+        color: white;
+    }
+}
+
+.footer-sections_group{
+    display:flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-section {
+    h3{
+        margin-top: 0;
+    }
+
+    ul{
+        li{
+            margin-bottom: 30px;
+
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.footer-aboutus  a:hover{
+    color: white !important;
+    background: $color-violet;
+    border-radius: 10px;
+}
+
+.footer-rights{
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background: $color-darkblue;
+
+    p{
+        margin: 0;
+    }
+}
+
+@media (max-width:765px) {
+    
+    .footer-sections_group{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-section{
+        ul{
+            li{
+                margin-bottom: 20px;
+            }
+        } 
+    }
+}

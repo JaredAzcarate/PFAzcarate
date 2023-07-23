@@ -1,0 +1,58 @@
+@import "./mixins.scss";
+@import "./colores.scss";
+
+/*Set Header */
+
+.navbar{
+    background: white;
+}
+
+header{
+    padding: 25px 50px;
+    max-height: 120px;
+}
+
+.header-brand{
+    width: 30%;
+    max-width: 190px;
+}
+
+.navbar-toggler{
+    max-width: 100px;
+    border: none !important;
+
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+
+.header-nav{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            color: $color-blue;
+        }
+    }
+
+}
+
+@media (max-width:765px) {
+    
+    .navbar-collapse{
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 15px 18px -13px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 15px 18px -13px rgba(0,0,0,0.41);
+        box-shadow: 0px 15px 18px -13px rgba(0,0,0,0.41);
+    }
+
+    .header-nav{
+        ul{
+            justify-content: center;
+        }
+    }
+}

@@ -1,6 +1,9 @@
+@import "./mixins.scss";
+@import "./colores.scss";
+
 .cursos-descripcion{
     height: 70vh;
-    background-color: var(--color-blue);
+    background-color: $color-blue;
     color: white;
     border-radius: 20px;
 }
@@ -8,6 +11,7 @@
 .cursos-grid_bg{
     background: linear-gradient(180deg, rgba(243,243,243,1) 0%, rgba(255,255,255,1) 53%);
 }
+
 .cursos-grid{
     margin: 0 30px !important;
 }
@@ -26,7 +30,9 @@
     border-radius: 20px;
 }
 
-.cursos-inscripcion h6{
-    color: var(--color-blue);
-    font-weight: 700;
+.cursos-inscripcion{
+    .h5{
+        color: $color-blue;
+        font-weight: 700;
+    }
 }

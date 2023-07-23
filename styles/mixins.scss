@@ -1,0 +1,7 @@
+/* Display Flex */
+@mixin flex ($direction, $y, $x){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $y;
+    justify-content: $x;
+}
