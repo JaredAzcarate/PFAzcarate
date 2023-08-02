@@ -27,6 +27,13 @@
     } 
 }
 
+.services-section{
+    background-image: url(../assets/png/services.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
 @media (max-width:765px) {
     .welcome-sections{
         flex-direction: column-reverse;

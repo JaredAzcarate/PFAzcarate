@@ -83,7 +83,7 @@ ul{
 
 .image-brand{
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .img{
@@ -177,10 +177,12 @@ button{
 
 .form{
     padding: 40px 0 0;
+    margin: 200px 0px;
 }
 
 .form-sections{
-    @include flex (row, start, space-between)
+    @include flex (row, start, space-between);
+    gap:20px;
 }
 
 .form-section{

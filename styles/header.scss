@@ -27,6 +27,7 @@ header{
 }
 
 .header-nav{
+    z-index: 1000;
     ul{
         display: flex;
         justify-content: space-between;
@@ -39,7 +40,7 @@ header{
 
 }
 
-@media (max-width:765px) {
+@media (max-width:991px) {
     
     .navbar-collapse{
         background: white;

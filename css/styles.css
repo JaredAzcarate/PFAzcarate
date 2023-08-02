@@ -64,7 +64,7 @@ ul {
 /* Set Image */
 .image-brand {
   width: 100%;
-  max-width: 200px; }
+  max-width: 150px; }
 
 .img {
   width: 100%; }
@@ -128,13 +128,15 @@ button {
 
 /* Set Form */
 .form {
-  padding: 40px 0 0; }
+  padding: 40px 0 0;
+  margin: 200px 0px; }
 
 .form-sections {
   display: flex;
   flex-direction: row;
   align-items: start;
-  justify-content: space-between; }
+  justify-content: space-between;
+  gap: 20px; }
 
 .form-section {
   width: 100%; }
@@ -202,14 +204,16 @@ header {
   .navbar-toggler:focus {
     box-shadow: none !important; }
 
-.header-nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .header-nav ul a {
-    color: #2DAAE1; }
+.header-nav {
+  z-index: 1000; }
+  .header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header-nav ul a {
+      color: #2DAAE1; }
 
-@media (max-width: 765px) {
+@media (max-width: 991px) {
   .navbar-collapse {
     background: white;
     padding: 30px;
@@ -287,6 +291,12 @@ footer {
 .welcome-text h1 span {
   font-weight: 600; }
 
+.services-section {
+  background-image: url(../assets/png/services.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain; }
+
 @media (max-width: 765px) {
   .welcome-sections {
     flex-direction: column-reverse;
@@ -323,7 +333,6 @@ footer {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
 
 .cursos-inscripcion {
-  min-height: 80vh;
   padding: 50px !important;
   background: linear-gradient(270deg, #f3f3f3 0%, white 53%);
   border-radius: 20px; }
